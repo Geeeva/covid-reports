@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col-md-3 col-6">{{formattedDate}}</div>
-        <div class="col-md-3 col-6">{{deathCases.Deaths}}</div>
+        <div class="col-md-3 col-6">{{deathCases.Deaths.toLocaleString()}}</div>
     </div>
 </template>
 
@@ -17,11 +17,11 @@
         props: {
             deathCases: Object
         },
-        created() {
+        mounted() {
             let year = this.deathCases.Date.slice(0, 4)
             let month = this.deathCases.Date.slice(5, 7)
             let day = this.deathCases.Date.slice(8, 10)
-            this.formattedDate = `${day}\\${month}\\${year}`
+            this.formattedDate = `${day}/${month}/${year}`
         }
     }
 </script>

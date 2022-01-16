@@ -63,7 +63,7 @@
             async selectedCountry(selectedCountry, oldSelectedCountry) {
                 if(selectedCountry !== oldSelectedCountry){
                     this.activeCasesPerCountry = await this.fetchActiveCasesPerCountry()
-                    if(this.activeCasesPerCountry || this.activeCasesPerCountry.length === 0){
+                    if(this.activeCasesPerCountry.length === 0){
                         this.notificationNoReport = "No Covid monitoring and reports are present"
                     }
                 }
