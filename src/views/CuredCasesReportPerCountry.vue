@@ -10,8 +10,8 @@
         <div v-if="curedCasesPerCountry && curedCasesPerCountry.length !== 0">
             <div class="table-head">
                 <div class="row">
-                    <div class="col-sm-3 col-6">Date</div>
-                    <div class="col-sm-3 col-6">Cured cases per day</div>
+                    <div class="col-md-3 col-6">Date</div>
+                    <div class="col-md-3 col-6">Cured cases per day</div>
                 </div>
             </div>
             <div class="table-body">

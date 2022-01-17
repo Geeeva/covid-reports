@@ -38,7 +38,6 @@
 <script>
     export default {
         name: 'Header',
-
     data() {
         return {
                 img: ['covid-logo.svg'],

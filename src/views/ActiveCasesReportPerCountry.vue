@@ -33,7 +33,6 @@
         name: 'ActiveCasesReportPerCountry',
         components: {
             DailyActiveCasesPerCountry
-
         },
         data() {
             return {
